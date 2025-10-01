@@ -7,4 +7,19 @@ Usando for...of, calcule o custo total de todas as contas já com o juro aplicad
 Apresente para o usuário qual será o valor final da compra.
     */
 
+    let naoPagas = [50.00, 15.50, 120.00, 80];
+    const juros = Number(prompt(`Insira a taxa de juros:`));
+    let valorFinal = 0;
+    let comJuros = [];
+
+    for (let novaConta of naoPagas) {
+        comJuros.push(novaConta + novaConta * juros / 100);
+    };  
+    for (let valores of comJuros) {
+        valorFinal = valorFinal + valores;
+    }
+
+    document.write(`O valor das contas com a taxa de juros é de: ${comJuros.join(`, `)} <br>
+    O valor total das contas é de: R$ ${valorFinal}`);
+
 </script>

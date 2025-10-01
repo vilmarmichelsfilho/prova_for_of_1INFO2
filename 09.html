@@ -8,4 +8,16 @@ const itensDisponiveis = ['maçã', 'pão', 'leite', 'manteiga', 'café'];
 Apresente para o usuário quais itens ele conseguirá comprar no mercado.
     */
 
+    let listaDeCompras = ['pão','queijo','leite','suco'];
+    const itensDisponiveis = ['maça','pão','leite','manteiga','café'];
+    let disponiveis = [];
+
+    for (let item of listaDeCompras) {
+        if (itensDisponiveis.search(item) > -1) {
+            disponiveis.push(item);
+        }
+    }
+
+    document.write(`Os itens disponiveis para compra são: ${disponiveis.join(`, `)}`);
+
 </script>

@@ -7,4 +7,18 @@ Você deve perguntar para o usuário qual a porcentagem de aumento e, então, ca
 Apresente para o usuário, no final do programa, a soma de todos os preços que estão no Array.
     */
 
+    let precos = [89.90, 750.00, 1200.50, 40.00];
+    const porcentagem = Number(prompt(`Insira a porcentagem do aumento:`));
+    let novosPrecos = [];
+    let somaTotal = 0;
+
+    for (let preco of precos) {
+        novosPrecos.push(preco + preco * porcentagem / 100);
+    };
+    for (let precosNovos of novosPrecos) {
+        somaTotal = somaTotal + precosNovos;
+    }
+
+    document.write(`Os novos preços são: ${novosPrecos.join(", ")} <br> E a soma de todos os preços são: ${somaTotal}`);
+
 </script>
