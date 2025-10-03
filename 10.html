@@ -7,4 +7,17 @@ Peça para o usuário inserir o seu próprio nome.
 Valide se o nome inserido pelo usuário consta na lista, retornando para o usuário se ele está cadastrado ou não.
     */
 
+    let usuariosCadastrados = ['admin','julia','pedro','lucas'];
+    const seuNome = prompt(`Insira seu nome:`);
+
+    let resultado = "Seu usuário não está cadastrado";
+
+    for (nome of usuariosCadastrados) {
+        if (nome == seuNome) {
+            resultado = "Seu usuário está cadastrado";
+        }
+    }
+
+    document.write(resultado);
+
 </script>
