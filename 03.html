@@ -14,13 +14,11 @@ Calcule a média de temperaturas que estão no Array e apresente para o usuário
     temperaturas.push(temperaturaAnterior, temperaturaAnteontem);
 
     let soma = 0;
-    let temperaturasAdd = 0;
 
     for (let temperatura of temperaturas) {
         soma = soma + temperatura;
-        temperaturasAdd = temperaturasAdd + 1;
     }
 
-    document.write(`A média da temperatura calculada é de: ${soma / temperaturasAdd}`);
+    document.write(`A média da temperatura calculada é de: ${soma / temperaturas.lenght}`);
 
 </script>

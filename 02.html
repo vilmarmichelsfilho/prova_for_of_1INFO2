@@ -14,7 +14,6 @@ Exiba a lista de e-mails válidos.
     let validos = [];
 
     for (let email of emails) {
-        console.log(email.search("@"))
         if (email.search("@") > -1) {
             validos.push(email);
         }
